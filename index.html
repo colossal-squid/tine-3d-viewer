@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Tine Kunkel: 3D Viewer</title>
+  <style>
+    body { margin: 0; overflow: hidden; }
+    canvas { display: block; }
+
+     #legend {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: rgba(255,255,255,0.9);
+    padding: 12px;
+    border-radius: 8px;
+    font-family: sans-serif;
+    font-size: 14px;
+    max-width: 220px;
+    z-index: 10;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  }
+  #legend h3 {
+    margin-top: 0;
+    font-size: 16px;
+  }
+  #legend ul {
+    padding-left: 20px;
+    margin: 5px 0;
+  }
+  </style>
+</head>
+<body>
+  <script type="module" src="/src/main.js"></script>
+  <div id="legend">
+    <h3>Tine Kunkel's 3D model viewer!</h3>
+    <p><strong>Controls:</strong></p>
+    <ul>
+      <li>🖱 Rotate: Left Mouse Drag</li>
+      <li>🔍 Zoom: Scroll Wheel</li>
+      <li>🧭 Pan: Right Mouse Drag</li>
+    </ul>
+    <p>Use the mouse to explore the model.</p>
+    <p>Click on interactive elements to play the sound (wip)</p>
+  </div>
+</body>
+</html>
