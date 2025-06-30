@@ -82,37 +82,33 @@ function onPointerClick(event) {
     switch (name) {
       // zine station buttons
       case 'object_31':
-        playAudio(`/tine-3d-viewer/assets/audio/Lea.mp3`)
+      case 'object_34':
+        playAudio(`/tine-3d-viewer/assets/audio/Lea beim Nachbarn.mp3`)
         break
       case 'object_32':
-        playAudio(`/tine-3d-viewer/assets/audio/Levi.mp3`)
+      case 'object_35':
+        playAudio(`/tine-3d-viewer/assets/audio/Levi&Mira.mp3`)
         break
       case 'object_33':
-        playAudio(`/tine-3d-viewer/assets/audio/Mira.mp3`)
-        break
-      case 'object_34':
-         playAudio(`/tine-3d-viewer/assets/audio/audio-2.mp3`)
-         break
-      case 'object_35':
-         playAudio(`/tine-3d-viewer/assets/audio/audio-2.mp3`)
-         break
       case 'object_36':
-         playAudio(`/tine-3d-viewer/assets/audio/audio-2.mp3`)
-         break
-       
-        break;
+        playAudio(`/tine-3d-viewer/assets/audio/Levi krank.mp3`)
+        break
       // puzzle station
-      case 'object_1':
       case 'object_26':
-      case 'object_27':
-      case 'object_28':
-      case 'object_30':
-         playAudio(`/tine-3d-viewer/assets/audio/audio-1.mp3`)
       case 'object_29':
-        playAudio(`/tine-3d-viewer/assets/audio/audio-2.mp3`)
+        playAudio(`/tine-3d-viewer/assets/audio/Lea.mp3`)
+        break;
+      case 'object_28':
+      case 'object_1':
+        playAudio(`/tine-3d-viewer/assets/audio/Levi.mp3`)
+        break
+      case 'object_27':
+      case 'object_30':
+        playAudio(`/tine-3d-viewer/assets/audio/Mira.mp3`)
         break;
 
       default:
+        playAudio(`/tine-3d-viewer/assets/audio/click.mp3`)
         break;
     }
   }
@@ -135,4 +131,4 @@ function playAudio(url) {
   });
 }
 
-window.addEventListener('pointerdown', onPointerClick);
+window.addEventListener('pointerup', onPointerClick);
